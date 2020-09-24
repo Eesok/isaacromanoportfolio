@@ -121,6 +121,7 @@
 								/></a>
 								<header>
 									<h3>Simon Game</h3>
+									<h6>- made using vanilla javascript</h6>
 								</header>
 							</article>
 							<article class="item">
@@ -132,6 +133,7 @@
 								/></a>
 								<header>
 									<h3>uMusicVid</h3>
+									<h6>- made by a team & using react.js & express.js</h6>
 								</header>
 							</article>
 						</div>
@@ -145,6 +147,7 @@
 								/></a>
 								<header>
 									<h3>The Nation Cave</h3>
+									<h6>made using react.js</h6>
 								</header>
 							</article>
 							<article class="item">
@@ -156,6 +159,7 @@
 								/></a>
 								<header>
 									<h3>Dolphin Vintage</h3>
+									<h6>made using react.js & django.py</h6>
 								</header>
 							</article>
 						</div>
@@ -168,9 +172,13 @@
 				<div class="container">
 					<header>
 						<h2>About Me</h2>
+						<h4>Click my Image!</h4>
 					</header>
 
-					<a href="#" class="image featured"
+					<a
+						href="https://drive.google.com/file/d/1vnCy2B09em4_ZKkTBJP-pRoIdjFajLv_/view?usp=sharing"
+						target="_blank"
+						class="image featured"
 						><img src="images/me.jpg" alt=""
 					/></a>
 
@@ -228,16 +236,25 @@
 						to me! I would love to hear from you :)
 					</p>
 
-					<form method="post" action="#">
+					<form action="https://postmail.invotes.com/send" method="post" id="email_form">
 						<div class="row">
 							<div class="col-6 col-12-mobile">
-								<input type="text" name="name" placeholder="Name" />
+								<input
+									id="subject"
+									type="text"
+									name="name"
+									placeholder="Name"
+								/>
 							</div>
 							<div class="col-6 col-12-mobile">
 								<input type="text" name="email" placeholder="Email" />
 							</div>
 							<div class="col-12">
-								<textarea name="message" placeholder="Message"></textarea>
+								<textarea
+									name="message"
+									id="message"
+									placeholder="Message"
+								></textarea>
 							</div>
 							<div class="col-12">
 								<input type="submit" value="Send Message" />
@@ -251,13 +268,30 @@
 		<!-- Footer -->
 		<div id="footer">
 			<!-- Copyright -->
-			<ul class="copyright">
-				<li>&copy; Untitled. All rights reserved.</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
+			<p>Design: <a href="http://html5up.net">HTML5 UP</a></p>
 		</div>
 
 		<!-- Scripts -->
+		<script type="text/javascript">
+			function loadEvents() {
+				var mailString;
+				function updateMailString() {
+					mailString =
+						'?subject=' +
+						encodeURIComponent($('#subject').val()) +
+						'&body=' +
+						encodeURIComponent($('#message').val());
+					$('#mail-link').attr('href', 'mailto:person@email.com' + mailString);
+				}
+				$('#subject').focusout(function () {
+					updateMailString();
+				});
+				$('#message').focusout(function () {
+					updateMailString();
+				});
+				updateMailString();
+			}
+		</script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
