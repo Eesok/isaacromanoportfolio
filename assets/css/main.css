@@ -436,7 +436,7 @@ br.clear {
 }
 
 .row > .col-4 {
-	width: 33.33333%;
+	width: 50%;
 }
 
 .row > .off-4 {
@@ -2112,6 +2112,7 @@ button:active,
 
 .item header h3 {
 	font-size: 1em;
+	font-weight: bold;
 }
 
 /* Icons */
