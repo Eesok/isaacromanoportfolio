@@ -2341,10 +2341,9 @@ button:active,
 #main > section.dark {
 	color: #ddd;
 	color: rgba(255, 255, 255);
-	font-weight: bold;
 }
 #main > section.dark header h2 {
-	color: #81918e;
+	color: yellowgreen;
 	font-weight: 500;
 }
 
@@ -2357,7 +2356,7 @@ button:active,
 }
 
 #main > section.dark strong {
-	color: #81918e;
+	color: yellow;
 	border-color: inherit;
 	font-weight: bolder;
 }
@@ -2379,7 +2378,7 @@ button:active,
 
 #main > section.one {
 	background-color: #81918e;
-	background-image: url('../../images/naturebackground.jpg');
+	background-image: url('../../images/stars.jpg');
 }
 
 #main > section.two {
