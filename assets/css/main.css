@@ -2463,6 +2463,10 @@ button:active,
 	.container {
 		padding: 0 2em 0 2em;
 	}
+	.about-me {
+		font-size: 14px;
+		font-weight: bold;
+	}
 
 	/* Icons */
 

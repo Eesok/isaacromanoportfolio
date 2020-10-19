@@ -65,12 +65,23 @@
 				<!-- Social Icons -->
 				<ul class="icons">
 					<li>
-						<a href="#" class="icon brands fa-github"
+						<a
+							href="https://www.linkedin.com/in/isaac-romano/"
+							target="_blank"
+							class="icon brands fa-linkedin"
+							><span class="label">LinkedIn</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/Eesok"
+							class="icon brands fa-github"
+							target="_blank"
 							><span class="label">Github</span></a
 						>
 					</li>
 					<li>
-						<a href="#" class="icon solid fa-envelope"
+						<a href="mailto:isaac93romano@gmail.com" class="icon solid fa-envelope"
 							><span class="label">Email</span></a
 						>
 					</li>
@@ -205,55 +216,53 @@
 				<div class="container">
 					<header>
 						<h2>About Me</h2>
-						<h4>Click my Image!</h4>
+						<h4>Click my Image to View Resume!</h4>
 					</header>
 
 					<a
-						href="https://drive.google.com/file/d/1vnCy2B09em4_ZKkTBJP-pRoIdjFajLv_/view?usp=sharing"
+						href="https://drive.google.com/file/d/1cwSLFmeK89_MRCEKh97RX6XsptGcNrVO/view?usp=sharing"
 						target="_blank"
 						class="image featured"
 						><img src="images/me.jpg" alt=""
 					/></a>
-
-					<p>
-						I am a creative software engineer with a proven knowledge of
-						programming, web design, and full stack application development. I
-						always focus on the growth and positivity of myself and those around
-						me. My biggest strength is the ability to adapt and change.
-						<br />
-						When I graduated high school, I went to Israel to serve as a
-						Paratrooper in the Israel Defense Forces. At first I used this as an
-						opportunity to learn more about myself, life, and where I fit in
-						society. After serving for 2 years, I had a grand realization that I
-						never want to define myself as a specific type of person. I want to
-						live a life of change, growth and inspiration.
-						<br />
-						Being that my natural talents and interests were in science and
-						mathematics, I went to college and majored in Mechanical
-						Engineering. This experience was both exhilarating and challenging.
-						All of the math equations that I came across throughout this part of
-						my life helped develop my mind and shape me to become more oriented
-						towards computer science.
-						<br />
-						While studying full time in college, I was also working full time as
-						a sales rep for an online jewelry website. Being that I served in
-						the military in a foreign land, I was up for the challenge. The
-						communication skills that were developed from the military
-						experience made my time as a sales rep fun and successful. It goes
-						without saying that my mental disciplinary muscles were in pretty
-						good shape so juggling these two full time commitments we doable,
-						although quite challenging, as things ought to be to enable real
-						growth.
-						<br />
-						After delving into advanced mathematics and physics courses, I
-						stumbled across the course “Intro to Computer Science”. This changed
-						everything for me. I fell in love with the art of coding. I did
-						tremendous research and decided to switch gears out of college and
-						towards an immersive software engineering boot-camp.
-						<br />
-						Now I know how to code in HTML, CSS, JavaScript, Python, React,
-						Django, JQuery, Node, Express, MySQL, PostgreSQL, and MongoDB.
-					</p>
+					<div class="about-me">
+						<p>
+							I am a creative software engineer with a proven knowledge of
+							programming, web design, and full stack application development.
+							<br />
+							When I graduated high school, I went to Israel to serve as a
+							Paratrooper in the Israel Defense Forces. At first I used this as
+							an opportunity to learn more about myself, life, and where I fit
+							in society. After serving for 2 years, I had a grand realization
+							that I never want to define myself as a specific type of person. I
+							want to live a life of change, growth and inspiration.
+							<br />
+							Being that my natural talents and interests were in science and
+							mathematics, I went to college and majored in Mechanical
+							Engineering. This experience was both exhilarating and
+							challenging. All of the math equations that I came across
+							throughout this part of my life helped develop my mind and shape
+							me to become more oriented towards computer science.
+							<br />
+							While studying full time in college, I was also working full time
+							as a sales rep for an online jewelry website. Being that I served
+							in the military in a foreign land, I was up for the challenge. The
+							communication skills that were developed from the military
+							experience made my time as a sales rep fun and successful.
+							<br />
+							While juggling these two full time commitments, I brought in $50k+
+							in sales each month!
+							<br />
+							After delving into advanced mathematics and physics courses, I
+							stumbled across the course “Intro to Computer Science”. This
+							changed everything for me. I fell in love with the art of coding.
+							I did tremendous research and decided to switch gears out of
+							college and towards an immersive software engineering boot-camp.
+							<br />
+							Now I know how to code in HTML, CSS, JavaScript, Python, React,
+							Django, Node, Express, MySQL, PostgreSQL, and MongoDB.
+						</p>
+					</div>
 				</div>
 			</section>
 
@@ -270,12 +279,12 @@
 					</p>
 
 					<form
-						action="https://postmail.invotes.com/send"
+						action="mailto:isaac93romano@gmail.com"
 						method="post"
 						id="email_form"
 					>
 						<div class="row">
-							<div class="col-6 col-12-mobile">
+							<!-- <div class="col-6 col-12-mobile">
 								<input
 									id="subject"
 									type="text"
@@ -285,7 +294,7 @@
 							</div>
 							<div class="col-6 col-12-mobile">
 								<input type="text" name="email" placeholder="Email" />
-							</div>
+							</div> -->
 							<div class="col-12">
 								<textarea
 									name="message"
@@ -309,26 +318,6 @@
 		</div>
 
 		<!-- Scripts -->
-		<script type="text/javascript">
-			function loadEvents() {
-				var mailString;
-				function updateMailString() {
-					mailString =
-						'?subject=' +
-						encodeURIComponent($('#subject').val()) +
-						'&body=' +
-						encodeURIComponent($('#message').val());
-					$('#mail-link').attr('href', 'mailto:person@email.com' + mailString);
-				}
-				$('#subject').focusout(function () {
-					updateMailString();
-				});
-				$('#message').focusout(function () {
-					updateMailString();
-				});
-				updateMailString();
-			}
-		</script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
