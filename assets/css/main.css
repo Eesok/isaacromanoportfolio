@@ -2153,6 +2153,14 @@ button:active,
 
 /* Header */
 
+.languages {
+	padding-top: 75px;
+	font-size: 40px;
+}
+.project-languages {
+	font-size: 25px;
+}
+
 #header {
 	display: -moz-flex;
 	display: -webkit-flex;
